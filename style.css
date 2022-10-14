@@ -1,33 +1,30 @@
-div{
+#sor{
     overflow-x: scroll;
 }
 
-table{
+#table{
     margin: auto;
     margin-top: 10%;
-    border-spacing: 0px;
     text-align: center;
     border: 5px ridge black;
+    display: flex;
 }
 
-tr{
-    overflow: scroll;
-}
-
-td{
+#sor > div{
     border: 2px ridge black;
     width: 300px;
     height: 175px;
+    display: inline-block;
 }
 
-td:first-child{
+#sor div:first-child{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     width: 100px;
     font-size: 25px;
 }
 
-td *{
+#sor > div *{
     display: inline-block;
 }
 
